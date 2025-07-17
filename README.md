@@ -8,18 +8,18 @@ This project demonstrates how to train and deploy the Ultralytics YOLOv11‑nano
 ### Project Flow
 
 1. **Environment & Dependencies**  
-- Install the Ultralytics YOLO package.  
-- Import essential libraries: OpenCV, Matplotlib, Pandas, Pathlib, etc.
+   - Install the Ultralytics YOLO package.  
+   - Import essential libraries: OpenCV, Matplotlib, Pandas, Pathlib, etc.
 
 2. **Data Preparation**  
-- Define paths to training, validation and test image folders, plus the dataset YAML file (`dataset.yaml`).  
-- Specify a sample video for real‑time inference (`TrafficPolice.mp4`).
+   - Define paths to training, validation and test image folders, plus the dataset YAML file (`dataset.yaml`).  
+   - Specify a sample video for real‑time inference (`TrafficPolice.mp4`).
 
 3. **Visualization Utility**  
-- Define `show_samples()` to display random images from any directory.
+   - Define `show_samples()` to display random images from any directory.
 
 4. **Exploratory Sampling**  
-- Render random samples from the **training** and **validation** splits to verify data integrity.
+   - Render random samples from the **training** and **validation** splits to verify data integrity.
 
 5. **Model Initialization & Training**  
    ```
@@ -34,9 +34,9 @@ This project demonstrates how to train and deploy the Ultralytics YOLOv11‑nano
        exist_ok=True
    )
    ```
-- Uses YOLOv11-nano (`yolo11n`) checkpoint.
-- Trains for 100 epochs on 640×640 images with batch size 16.
-- Output logs, model weights and training curves are saved under `runs/train/yolov11_vehicle/`.
+   - Uses YOLOv11-nano (`yolo11n`) checkpoint.
+   - Trains for 100 epochs on 640×640 images with batch size 16.
+   - Output logs, model weights and training curves are saved under `runs/train/yolov11_vehicle/`.
 
 6. **Test‑Set Inference**
 ```
@@ -49,8 +49,8 @@ test_results = model.predict(
     name='yolov11_vehicle'
 )
 ```
-- Runs detector on held‑out test images.
-- Saves annotated images in `runs/test/yolov11_vehicle/`.
+   - Runs detector on held‑out test images.
+   - Saves annotated images in `runs/test/yolov11_vehicle/`.
 
 7. **Prediction Visualization**
 Display a grid of sample detection results (`show_samples('runs/test/yolov11_vehicle', 'Test Set Predictions')`) for qualitative assessment.
@@ -66,7 +66,7 @@ model.predict(
     name='yolov11_vehicle'
 )
 ```
-- Processes `TrafficPolice.mp4`, saving the output video with overlaid bounding boxes to `runs/video/yolov11_vehicle/`.
+   - Processes `TrafficPolice.mp4`, saving the output video with overlaid bounding boxes to `runs/video/yolov11_vehicle/`.
 
 <br>
 
