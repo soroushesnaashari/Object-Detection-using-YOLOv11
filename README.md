@@ -69,7 +69,8 @@ model.predict(
     save=True,
     project='runs/video',
     name='yolov11_vehicle'
-)```
+)
+```
 
    - Processes `TrafficPolice.mp4`, saving the output video with overlaid bounding boxes to `runs/video/yolov11_vehicle/`.
 
