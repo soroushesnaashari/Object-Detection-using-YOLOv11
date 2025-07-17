@@ -39,33 +39,33 @@ This project demonstrates how to train and deploy the Ultralytics YOLOv11‑nano
    - Output logs, model weights and training curves are saved under `runs/train/yolov11_vehicle/`.
 
 6. **Test‑Set Inference**
-```
-test_results = model.predict(
-    source=TEST_IMAGES,
-    imgsz=640,
-    batch=16,
-    save=True,
-    project='runs/test',
-    name='yolov11_vehicle'
-)
-```
+   ```
+   test_results = model.predict(
+       source=TEST_IMAGES,
+       imgsz=640,
+       batch=16,
+       save=True,
+       project='runs/test',
+       name='yolov11_vehicle'
+   )
+   ```
    - Runs detector on held‑out test images.
    - Saves annotated images in `runs/test/yolov11_vehicle/`.
 
 7. **Prediction Visualization**
-Display a grid of sample detection results (`show_samples('runs/test/yolov11_vehicle', 'Test Set Predictions')`) for qualitative assessment.
+   - Display a grid of sample detection results (`show_samples('runs/test/yolov11_vehicle', 'Test Set Predictions')`) for qualitative assessment.
 
 8. **Video Inference**
-```
-os.makedirs('runs/video/yolov11_vehicle', exist_ok=True)
-model.predict(
-    source=VIDEO_PATH,
-    show=False,
-    save=True,
-    project='runs/video',
-    name='yolov11_vehicle'
-)
-```
+   ```
+   os.makedirs('runs/video/yolov11_vehicle', exist_ok=True)
+   model.predict(
+       source=VIDEO_PATH,
+       show=False,
+       save=True,
+       project='runs/video',
+       name='yolov11_vehicle'
+   )
+   ```
    - Processes `TrafficPolice.mp4`, saving the output video with overlaid bounding boxes to `runs/video/yolov11_vehicle/`.
 
 <br>
