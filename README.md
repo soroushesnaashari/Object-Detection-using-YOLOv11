@@ -1,4 +1,4 @@
-# Object Detection Using YOLOv11
+## Object Detection using YOLOv11
 
 ### Overview
 This project demonstrates how to train and deploy the Ultralytics YOLOv11‑nano model on a custom vehicle detection dataset. Using this lightweight, state‑of‑the‑art architecture, we achieve fast inference while maintaining high detection accuracy. After training on still images, the notebook walks through inference on a held‑out test set and on a traffic video.
