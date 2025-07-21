@@ -9,7 +9,7 @@ This project demonstrates how to train and deploy the Ultralytics YOLOv11‑nano
 
 1. **Environment & Dependencies**  
    - Install the Ultralytics YOLO package.  
-   - Import essential libraries: OpenCV, Matplotlib, Pandas, Pathlib, etc.
+   - Import essential libraries: Matplotlib, Pandas, Pathlib, etc.
 
 2. **Data Preparation**  
    - Define paths to training, validation and test image folders, plus the dataset YAML file (`dataset.yaml`).  
