@@ -1,4 +1,5 @@
 ## Object Detection using YOLOv11
+[![](Videos/TrafficPolice.mp4)](https://www.kaggle.com/code/soroushesnaashari/object-detection-using-yolov11/output)
 
 ### Overview
 This project demonstrates how to train and deploy the Ultralytics YOLOv11‑nano model on a custom vehicle detection dataset. Using this lightweight, state‑of‑the‑art architecture, we achieve fast inference while maintaining high detection accuracy. After training on still images, the notebook walks through inference on a held‑out test set and on a traffic video.
